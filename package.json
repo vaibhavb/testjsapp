@@ -1,9 +1,17 @@
 {
-  "name": "testjsapp",
-  "module": "index.ts",
+  "name": "@vaibhavb/testjsapp",
+  "version": "0.0.4",
+  "main": "dist/index.js",
   "type": "module",
+  "bin": {
+    "testjsapp": "dist/index.js"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "tsup": "^8.0.2"
+  },
+  "scripts": {
+    "package": "tsup"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
